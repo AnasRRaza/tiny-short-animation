@@ -1,7 +1,8 @@
-import useWebAnimations, { fadeInRightBig } from '@wellyshen/use-web-animations';
-import React, { useRef } from 'react'
+import useWebAnimations from '@wellyshen/use-web-animations';
+import React from 'react'
 import secImg from "../Images/sec-img.webp";
 import Typewriter from 'typewriter-effect';
+import IsResponsive from './IsResponsive';
 
 
 const Section = () => {
@@ -18,7 +19,6 @@ const Section = () => {
       easing: "ease-in-out",
     },
   })
-
 
   return (
     <div className="section">
@@ -41,6 +41,9 @@ const Section = () => {
       </div>
       <div className="img-div">
         <img ref={ref} className="sec-img" src={secImg} alt="Section" />
+      </div>
+      <div className="isResponSiveDivSec">
+        <IsResponsive />
       </div>
     </div>
   )

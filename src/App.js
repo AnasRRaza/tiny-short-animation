@@ -1,15 +1,15 @@
 import './App.css';
 import Footer from './Components/Footer';
-import JobsCard from './Components/JobsCard';
-import Navbar from './Components/Navbar';
+import Cards from './Components/Cards';
+import Header from './Components/Header';
 import Section from './Components/Section';
 
 function App() {
   return (
     <div className="wrapper">
-      <Navbar />
+      <Header />
       <Section />
-      <JobsCard />
+      <Cards />
       <Footer />
     </div>
   );
